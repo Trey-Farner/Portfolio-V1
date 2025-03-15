@@ -1,0 +1,63 @@
+body {
+    background: #2ED8D8;
+    background: linear-gradient(to bottom right, #2ED8D8 0%, #9A7BFF 55%, #014EC1 100%);
+    background-attachment: fixed;
+}
+
+.bannerName {
+    font-size: 1.8rem;
+    color: #737373;
+    margin: 0;
+    align-content: end;
+}
+
+.hamburgBtn {
+    background-color: #ffffff00;
+    border: none;
+    width: 5rem;
+
+    & :hover {
+        color: #000;
+    }
+}
+
+.menuBtn {
+    width: 35px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #737373;
+    margin: 6px 0;
+}
+
+nav {
+    align-items: end;
+
+    & a {
+        color: #737373;
+    }
+}
+
+.titleCard {
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 3px 13px 0px rgba(92, 92, 92, 1);
+    background-color: white;
+    max-width: 500px;
+
+    & .h1 {
+        color: #5a5a5a;
+    }
+
+    & h1 {
+        color: #303030;
+    }
+}
+
+.languages img {
+    width: 4rem;
+}
+
+.projects {
+    background-color: #fff;
+    color: #5a5a5a;
+}

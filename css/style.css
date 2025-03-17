@@ -4,9 +4,20 @@ body {
     background-attachment: fixed;
 }
 
+.headShot {
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+}
+
+.hamburg {
+    background-color: rgba(255, 255, 255, 0.596);
+    backdrop-filter: blur(8px);
+}
+
 .bannerName {
     font-size: 1.8rem;
-    color: #737373;
+    color: #424242;
     margin: 0;
     align-content: end;
 }
@@ -25,7 +36,7 @@ body {
     width: 35px;
     height: 5px;
     border-radius: 5px;
-    background-color: #737373;
+    background-color: #424242;
     margin: 6px 0;
 }
 
@@ -37,12 +48,16 @@ nav {
     }
 }
 
+.hero {
+    height: calc(95vh + 51px);
+}
+
 .titleCard {
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0px 3px 13px 0px rgba(92, 92, 92, 1);
     background-color: white;
-    max-width: 500px;
+    max-width: 632px;
 
     & .h1 {
         color: #5a5a5a;
@@ -51,6 +66,15 @@ nav {
     & h1 {
         color: #303030;
     }
+}
+
+.headShot {
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 3.5rem;
+    letter-spacing: -2px;
 }
 
 .languages img {

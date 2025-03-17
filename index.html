@@ -8,10 +8,9 @@
     <title>Trey Farner</title>
 </head>
 <body>
-    <header role="banner" class="container pt-2">
-        <div class="row hamburg sticky-top align-bottom">
+    <header role="banner" class="container-fluid fixed-top">
+        <div class="row hamburg align-bottom p-1">
             <div class="col-6 d-flex flex-grow-1">
-                <a href="https://github.com/Trey-Farner"><img src="./images/icons8-github-50.png" alt="Github logo"></a>
                 <p class="bannerName">Trey Farner</p>
             </div>
             <button class="hamburgBtn col-6 d-lg-none" onclick="openSidebar()" id="hamburgOpen">
@@ -19,7 +18,7 @@
                 <div class="menuBtn"></div>
                 <div class="menuBtn"></div>
             </button>
-            <nav class="d-none d-lg-flex col-4">
+            <nav class="d-none d-lg-flex col-6 justify-content-end">
                 <a href="#" class="p-2 text-decoration-none">Home</a>
                 <a href="#" class="p-2 text-decoration-none">About</a>
                 <a href="#" class="p-2 text-decoration-none">Socials</a>
@@ -28,22 +27,27 @@
             </nav>
         </div>
         
-        <div class="row justify-content-center">
-            <div class="titleCard text-center m-2">
-                <h1 class="display-3 fw-medium">Trey Farner</h1>
-                <div class="mb-3 h1 fw-normal">Full-Stack <br>Web Developer</div>
-                <div class="row justify-content-center languages">
-                    <img src="./images/icons8-html-5-48.png" alt="H T M L logo">
-                    <img src="./images/icons8-css-logo-48.png" alt="C S S logo">
-                    <img src="./images/icons8-javascript-logo-48.png" alt="Javascript logo">
-                    <img src="./images/icons8-react-40.png" alt="React logo">
-                </div>
-            </div>
-        </div>
+        
 
     </header>
 
     <main role="main" class="container-fluid">
+
+        <div class="row justify-content-center align-self-center">
+            <div class="hero align-content-center">
+                <div class="titleCard m-2 row">
+                    <div class="col-5 headShot justify-self-center align-self-center">
+                    
+                    </div>
+                    <div class="col-md-8 align-content-center">
+                        <h1 class="display-1 fw-medium name">Trey Farner</h1>
+                        <div class="h2 fw-normal">Full-Stack Web Developer</div>
+                        <div class="h2 fw-normal">📍Mississippi Gulf Coast</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row projects">
             <div class="display-6">Projects</div>
         </div>

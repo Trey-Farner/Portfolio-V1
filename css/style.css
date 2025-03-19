@@ -29,22 +29,19 @@ body {
     background-attachment: fixed;
 }
 
-.headShot {
-    width: 200px;
-    height: 200px;
-    background-color: tomato;
-}
-
 .hamburg {
     background-color: #ffffff00;
     backdrop-filter: blur(8px);
     transition-duration: .5s;
-    box-shadow: 0px -4px 16px 0px #4a4b94bd;
+    border-bottom: 1px solid #dcfaff15;
 
     &:hover {
     background-color: #ffffff98;
-    box-shadow: 0px 3px 13px 0px #5c5c5c;
     }
+}
+
+.devTitle {
+    padding-left: 10px;
 }
 
 .bannerName {
@@ -88,13 +85,7 @@ nav {
 }
 
 .hero {
-    height: calc(95vh + 51px);
-
-    & img {
-        width: 60%;
-        height: 70%;
-        object-fit: cover;
-    }
+    height: calc(100vh + 51px);
 }
 
 
@@ -157,7 +148,7 @@ nav {
 }
 
 .name {
-    font-size: 3.5rem;
+    font-size: clamp(4rem, calc(.5rem + 5vw), 8rem);
     letter-spacing: -2px;
 }
 
@@ -168,6 +159,40 @@ nav {
 .projects {
     background-color: #fff;
     color: #5a5a5a;
-    box-shadow: inset 0px -14px 13px -15px #5c5c5c,
-            inset 0px 14px 13px -15px #5c5c5c;
+    height: 500px;
+}
+
+.projectsCard {
+    top: calc(85vh + 1px);
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 13px 0px #5c5c5c;
+    padding-bottom: 12px;
+}
+
+.projectCard {
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px 0px #9e9e9e;
+}
+
+.projectImg {
+    border-radius: 10px;
+    border: 1px solid #ffffff00;
+    transition-duration: .3s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.sourceCode {
+    background: #2ac4c4;
+}
+
+.gradient {
+    background: linear-gradient(to bottom, #FFFFFF00 0%, #FFFFFF 100%);
+    height: 100px;
+    position: absolute;
+    bottom: 0;
 }

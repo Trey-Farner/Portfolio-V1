@@ -9,7 +9,7 @@
         rotate: -10deg;
     }
     50% {
-        transform: scale(1.2);
+        transform: scale(2);
     }
     60% {
         rotate: 10deg;
@@ -39,6 +39,7 @@ body {
     background-color: #ffffff00;
     backdrop-filter: blur(8px);
     transition-duration: .5s;
+    box-shadow: 0px -4px 16px 0px #4a4b94bd;
 
     &:hover {
     background-color: #ffffff98;
@@ -88,6 +89,12 @@ nav {
 
 .hero {
     height: calc(95vh + 51px);
+
+    & img {
+        width: 60%;
+        height: 70%;
+        object-fit: cover;
+    }
 }
 
 
@@ -98,6 +105,7 @@ nav {
     box-shadow: 0px 3px 13px 0px #5c5c5c;
     background-color: white;
     max-width: 632px;
+    height: fit-content;
     z-index: 1;
 
     & .h1 {
@@ -133,16 +141,15 @@ nav {
         border-radius: 10px;
         width: 4rem;
         position: absolute;
+        height: auto;
     }
 }
 
-.wiggle {
-    &:hover {
-        animation-name: wiggle;
-        animation-duration: 1s;
-        animation-direction: alternate;
-        animation-timing-function: ease-out;
-    }
+.wigContainer:hover > .wiggle {
+    animation-name: wiggle;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
 }
 
 .headShot {
@@ -161,4 +168,6 @@ nav {
 .projects {
     background-color: #fff;
     color: #5a5a5a;
+    box-shadow: inset 0px -14px 13px -15px #5c5c5c,
+            inset 0px 14px 13px -15px #5c5c5c;
 }

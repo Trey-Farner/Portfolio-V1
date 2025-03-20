@@ -22,11 +22,11 @@
                 <div class="menuBtn"></div>
             </button>
             <nav class="d-none d-lg-flex col-6 justify-content-end">
-                <a href="#" class="p-2 text-decoration-none">Home</a>
-                <a href="#" class="p-2 text-decoration-none">About</a>
-                <a href="#" class="p-2 text-decoration-none">Socials</a>
-                <a href="#" class="p-2 text-decoration-none">Testimonies</a>
-                <a href="#" class="p-2 text-decoration-none">Projects</a>
+                <a href="./index.html" class="p-2 text-decoration-none mx-2">Home</a>
+                <a href="#" class="p-2 text-decoration-none mx-2">About</a>
+                <a href="#" class="p-2 text-decoration-none mx-2">Socials</a>
+                <a href="#" class="p-2 text-decoration-none mx-2">Testimonies</a>
+                <a href="#" class="p-2 text-decoration-none mx-2">Projects</a>
             </nav>
         </div>
         
@@ -37,37 +37,64 @@
     <main role="main" class="container-fluid">
 
         <div class="row hero justify-content-center align-content-center position-relative">
-            <div class="titleCard col-12  col-lg-6 m-2 position-relative align-self-center">
+            <div class="titleCard col-12  col-lg-6 m-2 position-absolute">
                 <div class="row">
-                    <h1 class="d-inline name">Trey Farner</h1>
-                    <div class="col align-content-center">
+                    <h1 class="name">Trey Farner</h1>
+                    <div>
                         <div class="h2 fw-normal devTitle">Full-Stack Web Developer</div>
                         <div class="fw-normal wigContainer d-inline"><span class="d-inline-block wiggle">📍</span>Mississippi Gulf Coast</div>
-                    </div> 
+                        <p class="description col-10">I am currently a student learning front-end development focused on creating fresh and detailed websites.</p>
+                    </div>
+                    <button class="btn d-inline col-12">Download Resume</button>
+                    <a href="https://github.com/Trey-Farner" target="_blank" class="socContainer">
+                        <img src="./images/Github.png" alt="Github Logo" class="socials">
+                    </a>
+                    <a href="https://www.linkedin.com/in/treyfarner/" target="blank" class="socContainer">
+                        <img src="./images/linkedin-logo.png" alt="LinkedIn Logo" class="socials">
+                    </a>
                 </div>
                 <a href="https://github.com/Trey-Farner" target="_blank" class="cat position-absolute">
                     <img src="./images/Github.png" alt="GitHub cat logo">
                 </a>
             </div>
             <div class="row-fluid gradient align-self-end"></div>
-            <div class="projectsCard row col-10 position-absolute">
+
+
+            <div class="projectsCard row col-12 col-md-10 position-absolute justify-content-center">
+                <p class="display-6 col-10 p-4">Skills</p>
+                <div class="col-12 col-md-6 languages position-relative">
+                    <img src="./images/icons8-html-5-48.png" alt="H T M L logo" class="img1" title="HTML">
+                    <img src="./images/icons8-css-logo-48.png" alt="C S S logo" class="img2" title="CSS">
+                    <img src="./images/icons8-javascript-logo-48.png" alt="Javascript logo" class="img3" title="JavaScript">
+                    <img src="./images/icons8-react-40.png" alt="React logo" class="img4" title="React framework">
+                </div>
+
+
                 <div class="display-6 col-10 p-4">Projects</div>
-                <div class="projectCard col-6">
+                <div class="projectCard col-12 col-md-5">
                     <a href="https://trey-farner.github.io/Detroix-Pt.-2/" target="_blank">
                         <img src="./images/Detroix.png" alt="Placeholder image" class="col-12 mb-2 projectImg">
                     </a>
+                    <h3>Detroix Template</h3>
+                    <span class="projectLanguages">HTML</span>
+                    <span class="projectLanguages">CSS</span>
+                    <p class="projectDescription">An excercise using HTML, Bootstrap and CSS. The purpose was to make a 1 for 1 copy of the template using bootstrap.</p>
                     <button href="#" class="btn sourceCode">Source Code</button>
                 </div>
-                <div class="projectCard col-6">
+                <div class="projectCard col-12 col-md-5">
                     <a href="https://trey-farner.github.io/MCA-Bloom/" target="_blank">
                         <img src="./images/Bloom.png" alt="Placeholder image" class="col-12 mb-2 projectImg">
                     </a>
+                    <h3>Bloom Template</h3>
+                    <span class="projectLanguages">HTML</span>
+                    <span class="projectLanguages">CSS</span>
+                    <p class="projectDescription">An excercise using HTML, Bootstrap and CSS. The purpose was to make a 1 for 1 copy of the template using bootstrap.</p>
                     <button href="#" class="btn sourceCode">Source Code</button>
                 </div>
             </div>
         </div>
 
-        <div class="row projects justify-content-center">
+        <div class="row projects justify-content-center align-content-end">
             
         </div>
     </main>

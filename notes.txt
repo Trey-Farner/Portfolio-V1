@@ -4,3 +4,5 @@
                             <img src="./images/icons8-javascript-logo-48.png" alt="Javascript logo">
                             <img src="./images/icons8-react-40.png" alt="React logo">
                         </div>
+
+                        <p class="display-6">Skills</p>

@@ -102,6 +102,7 @@ nav {
 
 .hero {
     height: calc(120vh + 51px);
+    z-index: 0;
 }
 
 .titleCard {
@@ -111,8 +112,8 @@ nav {
     background-color: white;
     max-width: 632px;
     height: fit-content;
-    top: 18%;
-    z-index: 1;
+    top: -13%;
+    position: relative;
 
     & h1 {
         color: #303030;
@@ -132,8 +133,7 @@ nav {
     &:hover {
 
         & .cat {
-            translate: 0 -3rem;
-            opacity: 1;
+            translate: 0 -4rem;
         }
         
     }
@@ -144,23 +144,14 @@ nav {
     }
 }
 
-.cat {
-    top: 0;
-    left: 80%;
+.cat  {
+    top: -40px;
+    left: 70%;
     border: none;
-    z-index: 0;
+    z-index: -1;
     transition-duration: .5s;
-    opacity: 0;
-    background-color: #ffffff00;
-
-    & img {
-        background-color: white;
-        padding: .5rem;
-        border-radius: 10px;
-        width: 4rem;
-        position: absolute;
-        height: auto;
-    }
+    width: 5rem;
+    position: absolute;
 }
 
 .wigContainer:hover > .wiggle {
@@ -190,13 +181,13 @@ nav {
 
 .projects {
     background-color: #fff;
-    color: #5a5a5a;
-    height: 800px;
+    height: calc(100vh + 300px);
 }
 
-.projectsCard {
-    top: 72%;
+.projectsCard, .about {
+    top: -17rem;
     background-color: #ffffff;
+    color: #5a5a5a;
     border-radius: 10px;
     box-shadow: 0px 3px 13px 0px #5c5c5c;
     padding-bottom: 12px;

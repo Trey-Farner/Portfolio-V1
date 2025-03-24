@@ -101,7 +101,6 @@ nav {
 }
 
 .hero {
-    height: calc(120vh + 51px);
     z-index: 0;
 }
 
@@ -112,8 +111,9 @@ nav {
     background-color: white;
     max-width: 632px;
     height: fit-content;
-    top: -13%;
     position: relative;
+    align-self: flex-end;
+    margin: 25vh 0;
 
     & h1 {
         color: #303030;
@@ -180,18 +180,17 @@ nav {
 }
 
 .projects {
-    background-color: #fff;
-    height: calc(100vh + 300px);
+    background: linear-gradient(to bottom, #FFFFFF 35%, #FFFFFF00 65%);
 }
 
 .projectsCard, .about {
-    top: -7rem;
     background-color: #ffffff;
     color: #5a5a5a;
     border-radius: 10px;
     box-shadow: 0px 3px 13px 0px #5c5c5c;
     padding-bottom: 12px;
     padding: 2rem;
+    max-width: 1180px;
 }
 
 .projectCard {
@@ -223,15 +222,15 @@ nav {
 }
 
 .sourceCode {
-    background: #7799F2;
-    box-shadow: 0px 0px 10px 0px #7799F2;
+    background: #000000;
+    color: #fff;
 }
 
 .gradient {
-    background: linear-gradient(to bottom, #FFFFFF00 0%, #FFFFFF 100%);
-    height: 100px;
-    position: absolute;
-    bottom: 0;
+    background: linear-gradient(to bottom, #FFFFFF00 35%, #FFFFFF 65%);
+    max-height: fit-content;
+    align-self: flex-end;
+    padding: 0;
 }
 
 .languages {
@@ -269,4 +268,12 @@ nav {
 
 @keyframes carousel {
     to {left: -64px;}
+}
+
+.about {
+    margin: 10% 0;
+}
+
+.contentFlex {
+    justify-self: center;
 }

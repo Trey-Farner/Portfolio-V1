@@ -1,0 +1,231 @@
+body {
+    background: #2ED8D8;
+    background: linear-gradient(to bottom right, #2ED8D8 0%, #9A7BFF 55%, #014EC1 100%);
+    background-attachment: fixed;
+}
+
+.hamburg {
+    background-color: #ffffff00;
+    backdrop-filter: blur(8px);
+    transition-duration: .5s;
+    border-bottom: 1px solid #dcfaff15;
+
+    &:hover {
+    background-color: #ffffff98;
+    }
+}
+
+.bannerName {
+    font-size: 1.8rem;
+    color: #424242;
+    margin: 0;
+    margin-right: .5rem;
+    align-content: end;
+}
+
+.hamburgBtn {
+    background-color: #ffffff00;
+    border: none;
+    width: 5rem;
+
+    & :hover {
+        color: #000;
+    }
+}
+
+.menuBtn {
+    width: 35px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #424242;
+    margin: 6px 0;
+}
+
+nav {
+    align-items: end;
+
+    & a {
+        color: #737373;
+        border-radius: 10px;
+        transition-duration: .3s;
+
+        &:hover {
+            background-color: #737373;
+            color: white;
+        }
+    }
+}
+
+.experienceCard {
+    background-color: #ffffff;
+    color: #5a5a5a;
+    border-radius: 10px;
+    box-shadow: 0px 3px 13px 0px #5c5c5c;
+    padding-bottom: 12px;
+    padding: 2rem;
+    max-width: 1180px;
+    margin: 10% 0;
+}
+
+.experience {
+    background: linear-gradient(to bottom, #FFFFFF00 80%, #FFFFFF 100%);
+} 
+
+@keyframes rotateFlip {
+    from {
+        scale: .1;
+    }
+    to {
+        rotate: 360deg;
+        scale: 1;
+    }
+}
+
+@keyframes float {
+    from {translate: 0px;}
+    to {translate: 0px 10px;}
+}
+
+.templates {
+    background-color: #fff;
+    min-height: fit-content;
+}
+
+.heightBox {
+    margin: 40%;
+}
+
+.imgWrapper {
+    max-width: 1080px;
+}
+
+.animatedImg {
+    max-height: max-content;
+    box-shadow: 0px 0px 10px 0px #303030;
+    border-radius: 10px;
+    padding: 0;
+    transition-duration: .3s;
+
+    &:hover {
+        scale: 1.1;
+        box-shadow: 0px 0px 18px 0px #303030;
+    }
+}
+
+@keyframes img1Position {
+    from {
+        opacity: 0;
+        scale: .1;
+        translate: 0%;
+    }
+    to {
+        opacity: 1;
+        rotate: 360deg;
+        scale: 1;
+        translate: -100%;
+    }
+}
+
+.img1 {
+    width: 30%;
+    translate: -100%;
+    animation-name: img1Position;
+    animation-duration: 1ms;
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
+    animation-range: contain 0% contain 60%;
+}
+
+@keyframes img2Position {
+    from {
+        opacity: 0;
+        scale: .1;
+        translate: 0%;
+    }
+    to {
+        opacity: 1;
+        rotate: 360deg;
+        scale: 1;
+        translate: -60% 170%;
+    }
+}
+
+.img2 {
+    width: 20%;
+    translate: -60% 170%;
+    animation-name: img2Position;
+    animation-duration: 1ms;
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
+    animation-range: contain 0% contain 60%;
+}
+
+@keyframes img3Position {
+    from {
+        opacity: 0;
+        scale: .1;
+        translate: 0%;
+    }
+    to {
+        opacity: 1;
+        rotate: 360deg;
+        scale: 1;
+    }
+}
+
+.img3 {
+    width: 25%;
+    animation-name: img3Position;
+    animation-duration: 1ms;
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
+    animation-range: contain 0% contain 60%;
+}
+
+@keyframes img4Position {
+    from {
+        opacity: 0;
+        scale: .1;
+        translate: 0%;
+    }
+    to {
+        opacity: 1;
+        rotate: 360deg;
+        scale: 1;
+        translate: 80% 80%;
+    }
+}
+
+.img4 {
+    width: 20%;
+    translate: 80% 80%;
+    animation-name: img4Position;
+    animation-duration: 1ms;
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
+    animation-range: contain 0% contain 60%;
+}
+
+@keyframes img5Position {
+    from {
+        opacity: 0;
+        scale: .1;
+        translate: 0%;
+    }
+    to {
+        opacity: 1;
+        rotate: 360deg;
+        scale: 1;
+        translate: 200%;
+    }
+}
+
+.img5 {
+    width: 15%;
+    translate: 200%;
+    animation-name: img5Position;
+    animation-duration: 1ms;
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
+    animation-range: contain 0% contain 60%;
+}

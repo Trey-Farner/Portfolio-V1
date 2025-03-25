@@ -183,7 +183,7 @@ nav {
     background: linear-gradient(to bottom, #FFFFFF 35%, #FFFFFF00 65%);
 }
 
-.projectsCard, .about {
+.projectsCard, .about, .referencesCard {
     background-color: #ffffff;
     color: #5a5a5a;
     border-radius: 10px;
@@ -276,4 +276,12 @@ nav {
 
 .contentFlex {
     justify-self: center;
+}
+
+.wilRichmond, .drArmstrong {
+    width: 40%;
+}
+
+.referencesCard {
+    margin-bottom: 10%;
 }

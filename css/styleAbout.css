@@ -71,6 +71,10 @@ nav {
     background: linear-gradient(to bottom, #FFFFFF00 80%, #FFFFFF 100%);
 } 
 
+.companyWebsites {
+    background-color: #fff;
+}
+
 @keyframes rotateFlip {
     from {
         scale: .1;
@@ -132,8 +136,8 @@ nav {
     animation-name: img1Position;
     animation-duration: 1ms;
     animation-direction: alternate;
-    animation-timeline: scroll(block nearest);
-    animation-range: contain 0% contain 60%;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 40%;
 }
 
 @keyframes img2Position {
@@ -156,8 +160,8 @@ nav {
     animation-name: img2Position;
     animation-duration: 1ms;
     animation-direction: alternate;
-    animation-timeline: scroll(block nearest);
-    animation-range: contain 0% contain 60%;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 40%;
 }
 
 @keyframes img3Position {
@@ -178,8 +182,8 @@ nav {
     animation-name: img3Position;
     animation-duration: 1ms;
     animation-direction: alternate;
-    animation-timeline: scroll(block nearest);
-    animation-range: contain 0% contain 60%;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 40%;
 }
 
 @keyframes img4Position {
@@ -202,8 +206,8 @@ nav {
     animation-name: img4Position;
     animation-duration: 1ms;
     animation-direction: alternate;
-    animation-timeline: scroll(block nearest);
-    animation-range: contain 0% contain 60%;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 40%;
 }
 
 @keyframes img5Position {
@@ -226,6 +230,49 @@ nav {
     animation-name: img5Position;
     animation-duration: 1ms;
     animation-direction: alternate;
-    animation-timeline: scroll(block nearest);
-    animation-range: contain 0% contain 60%;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 40%;
+}
+
+.educationCard, .hobbiesCard {
+    background-color: #ffffff;
+    color: #5a5a5a;
+    border-radius: 10px;
+    box-shadow: 0px 3px 13px 0px #5c5c5c;
+    padding-bottom: 12px;
+    padding: 2rem;
+    margin: 10% 0;
+    max-width: 1180px;
+}
+
+.education {
+    background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF00 20%, #ffffff00 80%, #ffffff 100%);
+}
+
+.educationTitle {
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin-left: 2rem;
+}
+
+.hobbies {
+    overflow: hidden;
+    background: linear-gradient(to bottom, #ffffff 15%, #E4C610 30%, #F13515 50%);
+}
+
+.hobbiesCard {
+    position: relative;
+    z-index: 1;
+}
+
+.mtgCard {
+    border-radius: 20px;
+}
+
+.flames {
+    width: 100%;
+    padding: 0;
+    bottom: 0;
 }

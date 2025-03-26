@@ -233,6 +233,12 @@ nav {
     padding: 0;
 }
 
+.seeMore {
+    color: #FF8901;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
 .languages {
     max-width: 294px;
     height: 75px;
@@ -280,6 +286,8 @@ nav {
 
 .wilRichmond, .drArmstrong {
     width: 40%;
+    margin-bottom: 1rem;
+    border-radius: 5px;
 }
 
 .referencesCard {

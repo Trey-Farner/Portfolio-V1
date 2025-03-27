@@ -1,14 +1,25 @@
 body {
-    background: #2ED8D8;
-    background: linear-gradient(to bottom right, #2ED8D8 0%, #9A7BFF 55%, #014EC1 100%);
-    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.background {
+    z-index: -2;
+    background: linear-gradient(to bottom right, #8ecae6 0%, #219ebc 55%, #fb8500 100%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.fixed-top {
+    top: 10px;
 }
 
 .hamburg {
-    background-color: #ffffff00;
+    background-color: #f7f7f7a1;
     backdrop-filter: blur(8px);
     transition-duration: .5s;
-    border-bottom: 1px solid #dcfaff15;
+    border-radius: 50px;
+    justify-self: center;
+    max-width: 1180px;
 
     &:hover {
     background-color: #ffffff98;
@@ -103,4 +114,5 @@ nav {
 .gradient {
     max-height: fit-content;
     padding: 0;
+    max-width: 100vw;
 }

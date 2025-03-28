@@ -106,13 +106,98 @@ nav {
     }
 }
 
+/*Background Circles*/
+
+@keyframes pulseA {
+    0% {scale: 1;}
+    20% {translate: 0 -10px;}
+    40% {translate: 0 10px;}
+    50% {scale: 1.2;}
+    60% {translate: 0 -10px;}
+    80% {translate: 0 10px;}
+    100% {
+        translate: 0;
+        scale: 1;}
+}
+
+@keyframes pulseB {
+    0% {scale: 1;}
+    20% {translate: 0 -4px;}
+    40% {translate: 0 8px;}
+    50% {scale: .85;}
+    60% {translate: 0 -7px;}
+    80% {translate: 0 3px;}
+    100% {
+        translate: 0;
+        scale: 1;}
+}
+
+.cirContainer {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.cir {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: #8ecae6;
+}
+
+.cir1, .cir3, .cir5 {
+    animation: pulseA 10s infinite;
+}
+.cir2, .cir4, .cir6 {
+    animation: pulseB 8s infinite;
+}
+
+.cir1 {
+    top: 4%;
+    left: -5%;
+}
+
+.cir2 {
+    top: -5%;
+    right: 27%;
+    scale: 1;
+    background-color: #ffffff00;
+    border: .75rem solid #8ecae6;
+}
+
+.cir3 {
+    bottom: 0%;
+    left: 9%;
+    scale: .75;
+    background-color: #ffffff00;
+    border: .75rem solid #8ecae6;
+}
+
+.cir4 {
+    top: 39%;
+    right: 34%;
+    scale: 1;
+}
+
+.cir5 {
+    bottom: 10%;
+    right: 0%;
+    scale: 1;
+}
+
+.cir6 {
+    bottom: 40%;
+    right: 5%;
+    scale: .5;
+}
+
 .socials {
     width: 2.5rem;
     height: 2.5rem;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    margin: 0 .5rem;
+    margin: 0 .25rem;
 }
 
 .socContainer {
@@ -125,11 +210,24 @@ nav {
     z-index: 0;
 }
 
+.actualHero {
+    height: 90vh;
+    margin-top: 4rem;
+    padding: 0;
+}
+
+.imgContainer {
+    max-width: fit-content;
+}
+
 .heroImg {
-    width: 100%;
-    height: 100%;
+    width: clamp(10rem, 20vw, 20rem);
+    height: clamp(10rem, 20vw, 20rem);
     object-position: bottom;
     object-fit: cover;
+    border: 1rem solid #ffb703;
+    border-radius: 50%;
+    margin: .5rem 0;
     opacity: 0;
     animation-name: fade-in;
     animation-duration: 1s;
@@ -137,13 +235,24 @@ nav {
     animation-fill-mode: forwards;
 }
 
+.imgWrapper:hover > .shades {
+    translate: 0px 50px;
+    opacity: 1;
+}
+
+.shades {
+    left: 30%;
+    width: 40%;
+    opacity: 0;
+    transition-duration: 1s;
+}
+
 .titleCard {
     border-radius: 10px;
-    max-width: 1180px;
+    max-width: 860px;
     height: fit-content;
     position: relative;
     align-self: flex-end;
-    margin-bottom: 25vh;
     background-color: #ffffff;
     opacity: 0;
     animation-name: fade-in;
@@ -204,7 +313,7 @@ nav {
 
 .name {
     font-family: "Ultra", serif;
-    font-size: clamp(3.5rem, calc(.5rem + 7vw), 8rem);
+    font-size: clamp(3.5rem, calc(.5rem + 6vw), 8rem);
     letter-spacing: -2px;
     color: #ffb703;
 }
@@ -335,9 +444,36 @@ nav {
 }
 
 .wilRichmond, .drArmstrong {
-    width: 40%;
+    width: 100%;
     margin-bottom: 1rem;
     border-radius: 5px;
+}
+
+.crownA {
+    top: -9%;
+    width: 25%;
+    left: 33%;
+    rotate: -9deg;
+    transition-duration: .8s;
+    opacity: 0;
+}
+
+.crownB {
+    top: -10%;
+    width: 50%;
+    left: 25%;
+    transition-duration: .8s;
+    opacity: 0;
+}
+
+.wilWrapper:hover > .crownA {
+    translate: 0px 20px;
+    opacity: 1;
+}
+
+.armstrongWrapper:hover > .crownB {
+    translate: 0px 20px;
+    opacity: 1;
 }
 
 .referencesCard {

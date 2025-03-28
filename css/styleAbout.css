@@ -142,6 +142,13 @@ nav {
     }
 }
 
+.img1, .img2, .img3, .img4, .img5 {
+    animation-duration: 1ms;
+    animation-direction: alternate;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 50%;
+}
+
 @keyframes img1Position {
     from {
         opacity: 0;
@@ -160,10 +167,6 @@ nav {
     width: 30%;
     translate: -100%;
     animation-name: img1Position;
-    animation-duration: 1ms;
-    animation-direction: alternate;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 50%;
 }
 
 @keyframes img2Position {
@@ -184,10 +187,6 @@ nav {
     width: 20%;
     translate: -60% 170%;
     animation-name: img2Position;
-    animation-duration: 1ms;
-    animation-direction: alternate;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 50%;
 }
 
 @keyframes img3Position {
@@ -206,10 +205,6 @@ nav {
 .img3 {
     width: 25%;
     animation-name: img3Position;
-    animation-duration: 1ms;
-    animation-direction: alternate;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 50%;
 }
 
 @keyframes img4Position {
@@ -230,10 +225,6 @@ nav {
     width: 20%;
     translate: 80% 80%;
     animation-name: img4Position;
-    animation-duration: 1ms;
-    animation-direction: alternate;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 50%;
 }
 
 @keyframes img5Position {
@@ -254,10 +245,6 @@ nav {
     width: 15%;
     translate: 200%;
     animation-name: img5Position;
-    animation-duration: 1ms;
-    animation-direction: alternate;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 50%;
 }
 
 .educationCard, .hobbiesCard {

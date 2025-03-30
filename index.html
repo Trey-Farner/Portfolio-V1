@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
     <title>Trey Farner</title>
 </head>
 <body>
+
+    <!--Background Circles-->
+    <div class="background cirContainer position-fixed">
+        <div class="cir cir1 position-absolute"></div>
+        <div class="cir cir2 position-absolute"></div>
+        <div class="cir cir3 position-absolute"></div>
+        <div class="cir cir4 position-absolute"></div>
+        <div class="cir cir5 position-absolute"></div>
+        <div class="cir cir6 position-absolute"></div>
+    </div>
+
     <header role="banner" class="container-fluid fixed-top">
-        <div class="row hamburg align-bottom p-1">
+        <div class="row hamburg p-1 col-12 col-md-8">
             <div class="col-6 d-flex flex-grow-1">
                 <p class="bannerName">Trey Farner</p>
             </div>
@@ -30,27 +41,43 @@
     </header>
 
     <main role="main" class="container-fluid">
-
+        <div class="row justify-content-center">
+            
+        </div>
         <div class="row hero justify-content-center">
-            <!--Title Card-->
-            <div class="titleCard col-12 col-lg-6">
-                <div class="row">
-                    <h1 class="name">Trey Farner</h1>
-                    <div>
-                        <div class="h2 fw-normal devTitle">Full-Stack Web Developer</div>
-                        <div class="fw-normal wigContainer d-inline"><span class="d-inline-block wiggle">📍</span>Mississippi Gulf Coast</div>
-                        <p class="description col-10">I am a front-end developer focused on creating fresh and detailed websites.</p>
+
+            
+
+            <div class="row actualHero justify-content-center align-content-center col-12 col-md-10 position-relative">
+                <div class="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center imgContainer flex-row-reverse">
+                    <div class="imgWrapper position-relative">
+                        <img src="./images/Trey-removebg-preview.png" alt="Image of Trey Farner" class="heroImg align-self-center">
+                        <img src="./images/Pixel_Shades-removebg-preview.png" alt="Pixel Shades that make Trey look cool" class="shades position-absolute">
                     </div>
-                    <button class="btn d-inline col-12">Download Resume</button>
-                    <a href="https://github.com/Trey-Farner" target="_blank" class="socContainer">
-                        <img src="./images/Github.png" alt="Github Logo" class="socials">
-                    </a>
-                    <a href="https://www.linkedin.com/in/treyfarner/" target="blank" class="socContainer">
-                        <img src="./images/linkedin-logo.png" alt="LinkedIn Logo" class="socials">
-                    </a>
                 </div>
-                <img src="./images/cute-kitty.png" alt="black cat sitting over the title card" class="cat">
+                
+                <!--Title Card-->
+                
+                <div class="titleCard col-12 col-md-8 col-lg-8 flex-fill">
+                    <div class="row titleCardColor">
+                        <div>
+                            <h1 class="name">Trey Farner</h1>
+                            <div class="h2 fw-normal devTitle">Full-Stack Web Developer</div>
+                            <div class="fw-normal wigContainer d-inline"><span class="d-inline-block wiggle">📍</span>Mississippi Gulf Coast</div>
+                            <p class="description col-10">I am a front-end developer focused on creating fresh and detailed websites.</p>
+                        </div>
+                        <button class="btn d-inline col-12">Download Resume</button>
+                        <a href="https://github.com/Trey-Farner" target="_blank" class="socContainer">
+                            <img src="./images/Github.png" alt="Github Logo" class="socials">
+                        </a>
+                        <a href="https://www.linkedin.com/in/treyfarner/" target="blank" class="socContainer">
+                            <img src="./images/linkedin-logo.png" alt="LinkedIn Logo" class="socials">
+                        </a>
+                    </div>
+                    <img src="./images/cute-kitty.png" alt="black cat sitting over the title card" class="cat">
+                </div>
             </div>
+            
 
             <!--Projects Card-->
 
@@ -119,13 +146,19 @@
             <div class="col-12 col-md-10 referencesCard row justify-content-center">
                 <div class="display-6 col-10 p-4">References</div>
                 <div class="col-12 col-md-5 wilCard">
-                    <img src="./images/Wil Richmond Transparent.png" alt="Image of Wil Richmond playing the snare drum" class="wilRichmond">
+                    <div class="wilWrapper position-relative col-6">
+                        <img src="./images/Wil Richmond Transparent.png" alt="Image of Wil Richmond playing the snare drum" class="wilRichmond">
+                        <img src="./images/King_Crown-removebg-preview (1).png" alt="Crown resting on Wils head" class="position-absolute crownA">
+                    </div>
                     <h3>Wil Richmond</h3>
                     <h6>Assistant Band Director/Percussion Professor at MGCCC</h6>
                     <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda voluptatum nobis soluta dolorem harum iusto cumque quidem eligendi a perspiciatis!"</p>
                 </div>
                 <div class="col-12 col-md-5">
-                    <img src="./images/Dr. Armstrong Transparent.png" alt="Image of Dr. Armstrong" class="drArmstrong">
+                    <div class="armstrongWrapper position-relative col-6">
+                        <img src="./images/Dr. Armstrong Transparent.png" alt="Image of Dr. Armstrong " class="drArmstrong">
+                        <img src="./images/King_Crown-removebg-preview (1).png" alt="Crown resting on Armstrongs head" class="position-absolute crownB">
+                    </div>
                     <h3>Dr.Armstrong</h3>
                     <h6>Percussion Professor at Delta State University</h6>
                     <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis voluptatum corrupti nostrum quibusdam obcaecati placeat assumenda magnam dolores quas?"</p>

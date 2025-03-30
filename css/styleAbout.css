@@ -1,14 +1,119 @@
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        translate: 0px -50px;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*Background Circles*/
+
+@keyframes pulseA {
+    0% {scale: 1;}
+    20% {translate: 0 -10px;}
+    40% {translate: 0 10px;}
+    50% {scale: 1.2;}
+    60% {translate: 0 -10px;}
+    80% {translate: 0 10px;}
+    100% {
+        translate: 0;
+        scale: 1;}
+}
+
+@keyframes pulseB {
+    0% {scale: 1;}
+    20% {translate: 0 -4px;}
+    40% {translate: 0 8px;}
+    50% {scale: .85;}
+    60% {translate: 0 -7px;}
+    80% {translate: 0 3px;}
+    100% {
+        translate: 0;
+        scale: 1;}
+}
+
+.cirContainer {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.cir {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: #8ecae6;
+}
+
+.cir1, .cir3, .cir5 {
+    animation: pulseA 10s infinite;
+}
+.cir2, .cir4, .cir6 {
+    animation: pulseB 8s infinite;
+}
+
+.cir1 {
+    top: 4%;
+    left: -5%;
+}
+
+.cir2, .cir3 {
+    background-color: #ffffff00;
+    border: .75rem solid #8ecae6;
+}
+
+.cir2 {
+    top: -5%;
+    right: 27%;
+    scale: 1;
+}
+
+.cir3 {
+    bottom: 0%;
+    left: 9%;
+    scale: .75;
+}
+
+.cir4 {
+    top: 39%;
+    right: 34%;
+}
+
+.cir5 {
+    bottom: 10%;
+    right: 0%;
+}
+
+.cir6 {
+    bottom: 40%;
+    right: 5%;
+    scale: .5;
+}
+
 body {
-    background: #2ED8D8;
-    background: linear-gradient(to bottom right, #2ED8D8 0%, #9A7BFF 55%, #014EC1 100%);
-    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+.background {
+    z-index: -2;
+    background: linear-gradient(to bottom right, #8ecae6 0%, #219ebc 55%, #fb8500 100%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.fixed-top {
+    top: 10px;
 }
 
 .hamburg {
-    background-color: #ffffff00;
+    background-color: #f7f7f7a1;
     backdrop-filter: blur(8px);
     transition-duration: .5s;
-    border-bottom: 1px solid #dcfaff15;
+    border-radius: 50px;
+    justify-self: center;
+    max-width: 1180px;
 
     &:hover {
     background-color: #ffffff98;
@@ -65,6 +170,11 @@ nav {
     padding: 2rem;
     max-width: 1180px;
     margin: 10% 0;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
 }
 
 .experience {
@@ -101,6 +211,10 @@ nav {
 
 .imgWrapper {
     max-width: 1080px;
+
+    &:hover .animatedImg:not(:hover) {
+        filter: grayscale(1) blur(1px);
+    }
 }
 
 .animatedImg {
@@ -114,6 +228,13 @@ nav {
         scale: 1.1;
         box-shadow: 0px 0px 18px 0px #303030;
     }
+}
+
+.img1, .img2, .img3, .img4, .img5 {
+    animation-duration: 1ms;
+    animation-direction: alternate;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 50%;
 }
 
 @keyframes img1Position {
@@ -134,10 +255,6 @@ nav {
     width: 30%;
     translate: -100%;
     animation-name: img1Position;
-    animation-duration: 1ms;
-    animation-direction: alternate;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 40%;
 }
 
 @keyframes img2Position {
@@ -158,10 +275,6 @@ nav {
     width: 20%;
     translate: -60% 170%;
     animation-name: img2Position;
-    animation-duration: 1ms;
-    animation-direction: alternate;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 40%;
 }
 
 @keyframes img3Position {
@@ -180,10 +293,6 @@ nav {
 .img3 {
     width: 25%;
     animation-name: img3Position;
-    animation-duration: 1ms;
-    animation-direction: alternate;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 40%;
 }
 
 @keyframes img4Position {
@@ -204,10 +313,6 @@ nav {
     width: 20%;
     translate: 80% 80%;
     animation-name: img4Position;
-    animation-duration: 1ms;
-    animation-direction: alternate;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 40%;
 }
 
 @keyframes img5Position {
@@ -228,10 +333,6 @@ nav {
     width: 15%;
     translate: 200%;
     animation-name: img5Position;
-    animation-duration: 1ms;
-    animation-direction: alternate;
-    animation-timeline: view(block);
-    animation-range: cover 0% cover 40%;
 }
 
 .educationCard, .hobbiesCard {
@@ -258,8 +359,7 @@ nav {
 }
 
 .hobbies {
-    overflow: hidden;
-    background: linear-gradient(to bottom, #ffffff 15%, #E4C610 30%, #F13515 50%);
+    background-color: #fff;
 }
 
 .hobbiesCard {
@@ -269,10 +369,4 @@ nav {
 
 .mtgCard {
     border-radius: 20px;
-}
-
-.flames {
-    width: 100%;
-    padding: 0;
-    bottom: 0;
 }

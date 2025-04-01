@@ -6,3 +6,39 @@
                         </div>
 
                         <p class="display-6">Skills</p>
+
+/*Test*/
+
+.wrapper {
+    display: flex;
+    height: 20rem;
+    margin: 5rem;
+    width: 80vw;
+    justify-content: center;
+    justify-self: center;
+
+    &:hover .imgItems:not(:hover) {
+        filter: grayscale(1) blur(5px);
+    }
+}
+
+.imgItems  {
+    height: 100%;
+    width: 5rem;
+    object-fit: cover;
+    object-position: center;
+    transition-duration: .75s;
+
+    &:hover {
+        transform: scale(1.25);
+        width: 10rem;
+    }
+}
+
+<div class="wrapper">
+        <img src="./images/Trey-hero-img-removebg-preview.png" alt="" class="imgItems">
+        <img src="./images/Trey-hero-img-removebg-preview.png" alt="" class="imgItems">
+        <img src="./images/Trey-hero-img-removebg-preview.png" alt="" class="imgItems">
+        <img src="./images/Trey-hero-img-removebg-preview.png" alt="" class="imgItems">
+        <img src="./images/Trey-hero-img-removebg-preview.png" alt="" class="imgItems">
+    </div>

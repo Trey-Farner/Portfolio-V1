@@ -191,6 +191,10 @@ nav {
     scale: .5;
 }
 
+.button {
+    max-width: fit-content;
+}
+
 .socials {
     width: 2.5rem;
     height: 2.5rem;
@@ -218,6 +222,7 @@ nav {
 
 .imgContainer {
     max-width: fit-content;
+    margin-right: 1rem;
 }
 
 .heroImg {
@@ -229,10 +234,7 @@ nav {
     border-radius: 50%;
     margin: .5rem 0;
     opacity: 0;
-    animation-name: fade-in;
-    animation-duration: 1s;
-    animation-delay: .5s;
-    animation-fill-mode: forwards;
+    animation: fade-in 1s .5s forwards;
 }
 
 .imgWrapper:hover > .shades {
@@ -306,10 +308,7 @@ nav {
 }
 
 .wigContainer:hover > .wiggle {
-    animation-name: wiggle;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    animation-timing-function: ease-out;
+    animation: wiggle .75s alternate;
 }
 
 .headShot {
@@ -336,7 +335,7 @@ nav {
     background: linear-gradient(to bottom, #FFFFFF 35%, #FFFFFF00 65%);
 }
 
-.projectsCard, .about, .referencesCard {
+.projectsCard, .about, .referencesCard, .skillsCard {
     background-color: #ffffff;
     color: #5a5a5a;
     border-radius: 10px;
@@ -346,15 +345,19 @@ nav {
     max-width: 1180px;
 }
 
+.skills {
+    background-color: #ffffff;
+
+    & .skillsCard {
+        margin: 10% 0;
+    }
+}
 .projectsCard {
     opacity: 0;
 }
 
 .projectsCard {
-    animation-name: fade-in;
-    animation-delay: .75s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    animation: fade-in .75s .9s forwards;
 }
 
 .projectCard {
@@ -408,6 +411,7 @@ nav {
     height: 75px;
     overflow: hidden;
     mask-image: linear-gradient(to right, #FFFFFF00 0%, #ffffff 20%, #ffffff 80%, #FFFFFF00 100%);
+    justify-self: center;
     
     & img {
         padding: 0;
@@ -441,37 +445,40 @@ nav {
 }
 
 .about {
-    margin: 10% 0;
+    margin: 0 0 10% 0;
 }
 
 .contentFlex {
     justify-self: center;
 }
 
-.wilRichmond, .drArmstrong {
+.Mike, .drArmstrong {
     width: 100%;
+    aspect-ratio: 2 / 3;
     margin-bottom: 1rem;
     border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .crownA {
-    top: -9%;
-    width: 25%;
-    left: 33%;
+    top: 3%;
+    width: 55%;
+    left: 19%;
     rotate: -9deg;
     transition-duration: .8s;
     opacity: 0;
 }
 
 .crownB {
-    top: -10%;
-    width: 50%;
-    left: 25%;
+    top: -4%;
+    width: 70%;
+    left: 15%;
     transition-duration: .8s;
     opacity: 0;
 }
 
-.wilWrapper:hover > .crownA {
+.mikeWrapper:hover > .crownA {
     translate: 0px 20px;
     opacity: 1;
 }
@@ -484,3 +491,4 @@ nav {
 .referencesCard {
     margin-bottom: 10%;
 }
+
